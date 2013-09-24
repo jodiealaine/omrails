@@ -3,6 +3,9 @@ source 'https://rubygems.org'
 gem 'rails', '4.0.0'
 gem 'jquery-rails'
 gem 'turbolinks'
+gem 'protected_attributes'
+gem 'devise'
+gem 'simple_form'
 
 group :production do 
   gem 'pg'
