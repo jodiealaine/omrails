@@ -6,5 +6,7 @@ class User < ActiveRecord::Base
 
   attr_accessible :email, :password, :password_confirmation, :remember_me, :name
 
-  validates :name, :email, :password, :password_confirmation, presence: true
+  validates :name, :email, presence: true
+
+  has_many :pins
 end
