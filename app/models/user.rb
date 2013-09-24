@@ -5,4 +5,6 @@ class User < ActiveRecord::Base
          :rememberable, :trackable, :token_authenticatable #, :validatable, :recoverable 
 
   attr_accessible :email, :password, :password_confirmation, :remember_me, :name
+
+  validates :name, :email, :password, :password_confirmation, presence: true
 end
